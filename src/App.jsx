@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "wouter";
 import Home from './components/home';
 import Videos from './components/video';
 import Quran from './components/quran';
