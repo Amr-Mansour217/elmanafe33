@@ -12,7 +12,7 @@ import Another from './components/another';
 function App() {
   
   return (
-    <Router basename={import.meta.env.BASE_URL}> 
+    <Router basename={"/elmanafe33"}> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/videos" element={<Videos />} />
