@@ -210,6 +210,33 @@ function Videos(){
                 category: 'aqeedah'
             },
         ],
+        fr: [
+      
+        ],
+        tr: [
+    
+        ],
+        id: [
+    
+        ],
+        ru: [
+    
+        ],
+        hi: [
+    
+        ],
+        bn: [
+    
+        ],
+        zh: [
+    
+        ],
+        tl: [
+    
+        ],
+        fa: [
+    
+        ],
     }
     
     // useEffect(() => {

@@ -141,6 +141,33 @@ const Home = () => {
             link: 'https://www.youtube.com/embed/GqFrODsIPlQ?si=llaU_0ED6T2azXV1',
         },
     ],
+    fr: [
+      
+    ],
+    tr: [
+
+    ],
+    id: [
+
+    ],
+    ru: [
+
+    ],
+    hi: [
+
+    ],
+    bn: [
+
+    ],
+    zh: [
+
+    ],
+    tl: [
+
+    ],
+    fa: [
+
+    ],
 }
 
 useEffect(() => {
