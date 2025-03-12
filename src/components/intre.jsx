@@ -1,22 +1,24 @@
 import React, {useState} from 'react';
 // import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 import './intractivefiles.css' // تأكد من إنشاء هذا الملف CSS
 import Header from "./header";
 import Footer from './footer';
 import RamadanPic from './imgs/ramadan.jpg';
 function Intre() {
+  const { t } = useTranslation();
 
   const [activeCategory, setActiveCategory] = useState('all');
 
   const categories = [
-    { id: 'all', name: 'جميع الفيديوهات' },
-    { id: 'aqeedah', name: 'العقيدة' },
-    { id: 'fiqh', name: 'الفقه' },
-    { id: 'tafseer', name: 'تفسير القرآن' },
-    { id: 'seerah', name: 'السيرة النبوية' },
-    { id: 'hadith', name: 'الحديث' },
-    { id: 'akhlaq', name: 'الأخلاق' },
-    { id: 'education', name: 'العلوم التربوية' },
+    { id: 'all', name: t('جميع الفيديوهات') },
+    { id: 'aqeedah', name: t('العقيدة') },
+    { id: 'fiqh', name: t('الفقه') },
+    { id: 'tafseer', name: t('تفسير القرآن') },
+    { id: 'seerah', name: t('السيرة النبوية') },
+    { id: 'hadith', name: t('الحديث') },
+    { id: 'akhlaq', name: t('الأخلاق') },
+    { id: 'education', name: t('العلوم التربوية') },
   ];
   
   const allVideos = [
@@ -55,9 +57,9 @@ function Intre() {
   return (
     <>
     <Header />
-    <div class="videos-header">
-            <h1>مكتبة الفيديوهات الإسلامية</h1>
-            <p>مجموعة مميزة من المحاضرات والدروس في علوم الشريعة والسيرة النبوية</p>
+    <div className="videos-header">
+            <h1>{t('مكتبة الكتب الإسلامية')}</h1>
+            <p>{t('مجموعة مميزة من المحاضرات والدروس في علوم الشريعة والسيرة النبوية')}</p>
             </div>
     <div className="video-categories">
         <ul>
@@ -79,7 +81,7 @@ function Intre() {
       <div className="content-wrapper">
         <section className='videos-section'>
         <div class="section-title">
-            <h2>كتب مختارة</h2>
+            <h2>{t('كتب مختارة')}</h2>
         </div>
           <div className="videos-grid">
             {filteredVideos.map(book => (

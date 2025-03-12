@@ -1,10 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import Header from './header'
 import Searcher from "./imgs/searcher.png";
 import './apps.css' 
 import Footer from './footer';
 
 function Apps() {
+  const { t } = useTranslation();
   // قائمة بالتطبيقات (يمكنك إضافة المزيد حسب الحاجة)
   const apps = [
     { id: 1, name : "searcher" , image: Searcher, link: "https://play.google.com/store/apps/details?id=com.thedawah.furqan&hl=ar&pli=1" },
@@ -17,9 +19,9 @@ function Apps() {
     <div className="page-container">
       <Header />
 
-      <div class="videos-header">
-            <h1>مكتبة الفيديوهات الإسلامية</h1>
-            <p>مجموعة مميزة من المحاضرات والدروس في علوم الشريعة والسيرة النبوية</p>
+      <div className="videos-header">
+            <h1>{t('مكتبة التطبيقات الإسلامية')}</h1>
+            <p>{t('مجموعة مميزة من المحاضرات والدروس في علوم الشريعة والسيرة النبوية')}</p>
             </div>
 
       <div className="content-wrap">

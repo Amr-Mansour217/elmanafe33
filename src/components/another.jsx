@@ -1,10 +1,13 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import Header from './header';
 import './another.css';
 import Webimage from "./imgs/webimage.jpeg";
 import Footer from './footer';
 
 function Another() {
+  const { t } = useTranslation();
+  
     
     // قائمة بالمواقع (يمكنك إضافة المزيد حسب الحاجة)
   const websites = [
@@ -18,8 +21,8 @@ function Another() {
     <div className="page-container">
       <Header/>
       <div class="videos-header">
-    <h1>مكتبة الفيديوهات الإسلامية</h1>
-    <p>مجموعة مميزة من المحاضرات والدروس في علوم الشريعة والسيرة النبوية</p>
+    <h1>{t('مكتبة المواقع الإسلامية')}</h1>
+    <p>{t('مجموعة مميزة من المحاضرات والدروس في علوم الشريعة والسيرة النبوية')}</p>
     </div>
     
       <div className="content-wrap">

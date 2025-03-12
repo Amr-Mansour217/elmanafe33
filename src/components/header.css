@@ -159,16 +159,15 @@ header {
   .language-content {
     visibility: hidden;
     position: fixed;
-    left: 0;
+    /* left: 0; */
     top: 15vh;
     background-color: white;
     border-radius: 8px;
     width: 180px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    z-index: 100;
     padding: 10px 0;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-inline: -70px;
     z-index: 1000;
   }
   

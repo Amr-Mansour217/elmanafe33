@@ -39,12 +39,12 @@ function Header() {
   };
 
   const navItems = [
-      { path: "/", text: "الرئيسية" },
-      { path: "/videos", text: "الفيديوهات" },
-      { path: "/quran", text: "القرآن الكريم" },
-      { path: "/library", text: "الملفات التفاعلية" },
-      { path: "/apps", text: "تطبيقات إسلامية" },
-      { path: "/anotherweb", text: "مواقع إسلامية أخرى" }
+      { path: "/", text: t("الرئيسية") },
+      { path: "/videos", text: t("الفيديوهات") },
+      { path: "/quran", text: t("القرآن الكريم") },
+      { path: "/library", text: t("الملفات التفاعلية") },
+      { path: "/apps", text: t("تطبيقات إسلامية") },
+      { path: "/anotherweb", text: t("مواقع إسلامية أخرى") }
   ];
     
           
@@ -88,7 +88,8 @@ function Header() {
                     <a href="#" onClick={() => changeLanguage('ur')}>اردو</a>
                     <a href="#" onClick={() => changeLanguage('bn')}>বাংলা</a>
                     <a href="#" onClick={() => changeLanguage('zh')}>中国人</a>
-                    <a href="#" onClick={() => changeLanguage('fil')}>Pilipino</a>
+                    <a href="#" onClick={() => changeLanguage('tl')}>filipino</a>
+                    <a href="#" onClick={() => changeLanguage('fa')}>فارسی</a>
                   </div>
                 </div>
               </nav>

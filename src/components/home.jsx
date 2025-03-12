@@ -3,14 +3,56 @@ import './home.css';
 import { useTranslation } from 'react-i18next';
 // import Logo from './imgs/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faCheckCircle, faCircleXmark} from '@fortawesome/free-solid-svg-icons';
 import { IoStar } from "react-icons/io5";
 import Header from './header'
 import Footer from './footer'
 
 const Home = () => {
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [rating, setRating] = useState(0);
+  const [hoverRating, setHoverRating] = useState(0);
+  const [feedback, setFeedback] = useState('');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isErrorModalOpen, setIsErrorModalOpen] = useState(false);
+  const [videos, setVideos] = useState([]);
+
+  const handleStarClick = (selectedRating) => {
+    setRating(selectedRating);
+  };
+
+  const handleStarHover = (hoveredRating) => {
+    setHoverRating(hoveredRating);
+  };
+
+  const handleStarLeave = () => {
+    setHoverRating(0);
+  };
+
+  const handleFeedbackChange = (e) => {
+    setFeedback(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (rating === 0 || feedback.trim() === '') {
+      setIsErrorModalOpen(true);
+    } else {
+      setIsModalOpen(true);
+      // هنا يمكنك إضافة الكود لإرسال التقييم إلى الخادم
+      setRating(0);
+      setFeedback('');
+    }
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const closeErrorModal = () => {
+    setIsErrorModalOpen(false);
+  };
   // const { t, i18n } = useTranslation();
   // const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   // const languageRef = useRef(null);
@@ -38,72 +80,86 @@ const Home = () => {
   //   setIsLanguageOpen(false);
   // };
 
-  const videos = [
-    {
-      id: 1,
-      title: 'أصول الفقه للمبتدئين',
-      description: 'شرح مبسط لأصول الفقه الإسلامي للمبتدئين مع الأمثلة التطبيقية',
-      duration: '45 دقيقة',
-      views: '1.2K'
-    },
-    {
-      id: 2,
-      title: 'علوم القرآن',
-      description: 'مقدمة في علوم القرآن الكريم وأساليب التفسير المختلفة',
-      duration: '60 دقيقة',
-      views: '2.5K'
-    },
-    {
-      id: 3,
-      title: 'السيرة النبوية',
-      description: 'دروس مستفادة من سيرة النبي محمد صلى الله عليه وسلم',
-      duration: '50 دقيقة',
-      views: '3.7K'
-    },
-  ];
+  const allVideos = {
+    ar: [
+        {
+            id: 1,
+            title: 'أساسيات العقيدة الإسلامية',
+            description: 'شرح لأهم أصول العقيدة الإسلامية للمبتدئين ومجمل أركان الإيمان',
+            link: 'https://www.youtube.com/embed/FsDrBKQy7gM?si=h414kkga6ycM4r5o',
+        },
+        {
+            id: 2,
+            title: 'فضائل شهر رمضان',
+            description: 'محاضرة عن فضائل شهر رمضان وأهميته في الإسلام',
+            link: 'https://www.youtube.com/embed/ZINjuzYQxX4?si=LIMh4FGyhj_5goO6',
+        },
+        {
+            id: 3,
+            title: 'السيرة النبوية',
+            description: 'دروس من حياة النبي محمد صلى الله عليه وسلم',
+            link: 'https://www.youtube.com/embed/tjp7wiUaPZk?si=QTrBLZ8nzMYXSliB',
+        },
+    ],
+    en: [
+        {
+            id: 1,
+            title: 'Basics of Islamic Creed',
+            description: 'Explanation of the most important principles of Islamic creed for beginners',
+            link: "https://www.youtube.com/embed/XPOX5QedkGo?si=M0JFmuWgsHLGt6eh",
+        },
+        {
+            id: 2,
+            title: 'Virtues of Ramadan',
+            description: 'Lecture on the virtues of Ramadan and its importance in Islam',
+            link: "https://www.youtube.com/embed/f8PTOQFl4f4?si=d_qlbHJKMltZsNQf",
+        },
+        {
+            id: 3,
+            title: 'Virtues of Ramadan',
+            description: 'Lecture on the virtues of Ramadan and its importance in Islam',
+            link: "https://www.youtube.com/embed/UK94ne7RrIM?si=GiFDf1xL4aDjFCu2",
+        },
+    ],
+    ur: [  
+        {
+            id: 1,
+            title: "عقیدہ کی اہمیت",
+            description: "عقیدہ کی اہمیتعقیدہ کی اہمیت",
+            link: 'https://www.youtube.com/embed/GqFrODsIPlQ?si=llaU_0ED6T2azXV1',
+        },
+        {
+            id: 2,
+            title: "عام غلطیوں کی وضاحت اور سورۃ الفاتحہ پڑھنے کا صحیح طریقہ",
+            description: "عقیدہ کی اہمیتعقیدہ کی اہمیت",
+            link: 'https://www.youtube.com/embed/2DmMjDj4KMQ?si=4Myueswq1qDh3Hdl',
+        },
+        {
+            id: 3,
+            title: "عقیدہ کی اہمیت",
+            description: "عقیدہ کی اہمیتعقیدہ کی اہمیت",
+            link: 'https://www.youtube.com/embed/GqFrODsIPlQ?si=llaU_0ED6T2azXV1',
+        },
+    ],
+}
+
+useEffect(() => {
+  const currentLanguage = i18n.language;
+  setVideos(allVideos[currentLanguage] || allVideos.en);
+}, [i18n.language]);
+
+useEffect(() => {
+  if (isModalOpen) {
+    const timer = setTimeout(() => {
+      setIsModalOpen(false);
+    }, 3000);
+    
+    return () => clearTimeout(timer);
+  }
+}, [isModalOpen]);
 
 
 
-  const [rating, setRating] = useState(0);
-  const [hoverRating, setHoverRating] = useState(0);
-  const [feedback, setFeedback] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  useEffect(() => {
-    if (isModalOpen) {
-      // إغلاق تلقائي بعد 3 ثواني
-      const timer = setTimeout(() => {
-        setIsModalOpen(false);
-      }, 3000);
-      
-      return () => clearTimeout(timer);
-    }
-  }, [isModalOpen]);
-
-  const handleStarClick = (index) => {
-    setRating(index);
-  };
-
-  const handleStarHover = (index) => {
-    setHoverRating(index);
-  };
-
-  const handleStarLeave = () => {
-    setHoverRating(0);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // هنا يمكن إضافة كود لإرسال التقييم إلى الخادم
-    setIsModalOpen(true);
-    // إعادة تعيين النموذج بعد الإرسال
-    setRating(0);
-    setFeedback('');
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
 
 
   return (
@@ -134,11 +190,19 @@ const Home = () => {
       </div>
       
       <div className="videos-grid">
-        {videos.map(video => (
-          <div className="video-card" key={video.id}>
-            <div className="video-thumbnail">
-              <div className="play-icon"></div>
-            </div>
+      {videos.map(video => (
+            <div className="video-card" key={video.id}>
+              <div className="video-thumbnail">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src={video.link} 
+                  title={video.title}
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                ></iframe>
+              </div>
             <div className="video-info">
               <h3 className="video-title">{video.title}</h3>
               <p className="video-desc">{video.description}</p>
@@ -149,19 +213,18 @@ const Home = () => {
       
       <div className="more-btn-container">
         <a href="#more-videos" className="more-btn">
-          عرض المزيد من الدروس
+          {t('عرض المزيد من الدروس')}
           <FontAwesomeIcon icon={faArrowLeft} />
         </a>
       </div>
     </div>
 
     <main className="rating-section">
-        <h2 className="rating-section-title">شاركنا رأيك</h2>
+        <h2 className="rating-section-title">{t('شاركنا رأيك')}</h2>
         <div className="stars-container">
           {[1, 2, 3, 4, 5].map((index) => (
             <IoStar
               key={index}
-              icon={(hoverRating || rating) >= index  }
               className={`star ${(hoverRating || rating) >= index ? 'active' : ''}`}
               onClick={() => handleStarClick(index)}
               onMouseEnter={() => handleStarHover(index)}
@@ -171,25 +234,39 @@ const Home = () => {
         </div>
         <form className="feedback-form" onSubmit={handleSubmit}>
           <textarea
-            placeholder="اكتب تعليقك هنا..."
+            placeholder={t("اكتب تعليقك هنا...")}
             value={feedback}
-            onChange={(e) => setFeedback(e.target.value)}
+            onChange={handleFeedbackChange}
           ></textarea>
-          <button type="submit" className="submit-btn">إرسال التقييم</button>
+          <button type="submit" className="submit-btn">{t("إرسال التقييم")}</button>
         </form>
       </main>
 
-      {/* Modal مدمج داخل المكون */}
       {isModalOpen && (
         <div className="modal-overlay">
           <div className="success-modal">
             <div className="success-icon">
-                <FontAwesomeIcon icon={faCheckCircle} />
+              <FontAwesomeIcon icon={faCheckCircle} />
             </div>
-            <h3 className="modal-title">تم بنجاح!</h3>
-            <p className="modal-message">تم إرسال تقييمك بنجاح، شكراً لك!</p>
+            <h3 className="modal-title">{t('تم بنجاح!')}</h3>
+            <p className="modal-message">{t('تم إرسال تقييمك بنجاح، شكراً لك!')}</p>
             <button className="modal-close-btn" onClick={closeModal}>
-              إغلاق
+              {t('إغلاق')}
+            </button>
+          </div>
+        </div>
+      )}
+      
+      {isErrorModalOpen && (
+        <div className="modal-overlay">
+          <div className="error-modal">
+            <div className="error-icon">
+              <FontAwesomeIcon icon={faCircleXmark} />
+            </div>
+            <h3 className="modal-title">{t('خطأ!')}</h3>
+            <p className="modal-message">{t('يرجى اختيار عدد النجوم وكتابة تعليق قبل الإرسال')}</p>
+            <button className="modal-close-btn" onClick={closeErrorModal}>
+              {t('إغلاق')}
             </button>
           </div>
         </div>
