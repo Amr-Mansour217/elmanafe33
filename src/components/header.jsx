@@ -89,7 +89,7 @@ function Header() {
                     <a href="#" onClick={() => changeLanguage('bn')}>বাংলা</a>
                     <a href="#" onClick={() => changeLanguage('zh')}>中国人</a>
                     <a href="#" onClick={() => changeLanguage('tl')}>filipino</a>
-                    <a href="#" onClick={() => changeLanguage('fa')}>فارسی</a>
+                    <a href="#" onClick={() => changeLanguage('f')}>فارسی</a>
                   </div>
                 </div>
               </nav>

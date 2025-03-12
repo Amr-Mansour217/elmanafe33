@@ -5,7 +5,7 @@ import './intractivefiles.css' // تأكد من إنشاء هذا الملف CSS
 import Header from "./header";
 import Footer from './footer';
 import BookCover from './imgs/ramadan.jpg';
-import BookCoverr from './imgs/ramadan2.png';
+import BookCoverr from './imgs/ramadan-two.png';
 function Intre() {
   const { t, i18n } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('all');

@@ -3,7 +3,7 @@ import './home.css';
 import { useTranslation } from 'react-i18next';
 // import Logo from './imgs/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faCheckCircle, faCircleXmark} from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faCheckCircle, faCircleXmark, faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import { IoStar } from "react-icons/io5";
 import Header from './header'
 import Footer from './footer'
@@ -225,7 +225,6 @@ useEffect(() => {
                   height="100%" 
                   src={video.link} 
                   title={video.title}
-                  frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   allowFullScreen
                 ></iframe>
@@ -239,7 +238,7 @@ useEffect(() => {
       </div>
       
       <div className="more-btn-container">
-        <a href="#more-videos" className="more-btn">
+        <a href="/videos" className="more-btn">
           {t('عرض المزيد من الدروس')}
           <FontAwesomeIcon icon={faArrowLeft} />
         </a>
