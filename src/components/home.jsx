@@ -3,7 +3,7 @@ import './home.css';
 import { useTranslation } from 'react-i18next';
 // import Logo from './imgs/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faCheckCircle, faCircleXmark, faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faCheckCircle, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { IoStar } from "react-icons/io5";
 import Header from './header'
 import Footer from './footer'
