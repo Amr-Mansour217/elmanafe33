@@ -54,7 +54,7 @@ function Header() {
               <div className="header-pattern"></div>
               <div className="top-nav">
                 <div className="logo-container">
-                  <div className='scrolling'>بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</div>
+                  <div className='scrolling'>{t("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ")}</div>
                   <img src={Logo} alt="منافع" className="logo" />
                 </div>
               </div>
@@ -89,7 +89,7 @@ function Header() {
                     <a href="#" onClick={() => changeLanguage('bn')}>বাংলা</a>
                     <a href="#" onClick={() => changeLanguage('zh')}>中国人</a>
                     <a href="#" onClick={() => changeLanguage('tl')}>filipino</a>
-                    <a href="#" onClick={() => changeLanguage('f')}>فارسی</a>
+                    <a href="#" onClick={() => changeLanguage('fa')}>فارسی</a>
                   </div>
                 </div>
               </nav>

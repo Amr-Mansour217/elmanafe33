@@ -3,7 +3,7 @@ import './home.css';
 import { useTranslation } from 'react-i18next';
 // import Logo from './imgs/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faCheckCircle, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowRight, faCheckCircle, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import { IoStar } from "react-icons/io5";
 import Header from './header'
 import Footer from './footer'
@@ -240,7 +240,7 @@ useEffect(() => {
       <div className="more-btn-container">
         <a href="/videos" className="more-btn">
           {t('عرض المزيد من الدروس')}
-          <FontAwesomeIcon icon={faArrowLeft} />
+          <FontAwesomeIcon icon={i18n.dir() === 'ltr' ? faArrowRight : faArrowLeft} />
         </a>
       </div>
     </div>

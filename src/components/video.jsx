@@ -336,7 +336,11 @@ function Videos(){
                 <div className="pagination">
                     <ul>
                         {currentPage > 1 && (
-                            <li><a href="#" onClick={() => paginate(currentPage - 1)}><FontAwesomeIcon icon={faChevronRight} /></a></li>
+                            <li>
+                                <a href="#" onClick={() => paginate(currentPage - 1)}>
+                                    <FontAwesomeIcon icon={i18n.dir() === 'ltr' ? faChevronLeft : faChevronRight} />
+                                </a>
+                            </li>
                         )}
                         {pageNumbers.map(number => (
                             <li key={number}>
@@ -346,7 +350,11 @@ function Videos(){
                             </li>
                         ))}
                         {currentPage < pageNumbers.length && (
-                            <li><a href="#" onClick={() => paginate(currentPage + 1)}><FontAwesomeIcon icon={faChevronLeft} /></a></li>
+                            <li>
+                                <a href="#" onClick={() => paginate(currentPage + 1)}>
+                                    <FontAwesomeIcon icon={i18n.dir() === 'ltr' ? faChevronRight : faChevronLeft} />
+                                </a>
+                            </li>
                         )}
                     </ul>
                 </div>
