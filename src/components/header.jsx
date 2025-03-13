@@ -4,10 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from './imgs/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faGlobe, 
-  faChevronDown, 
-  } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   const { t, i18n } = useTranslation();
