@@ -4,77 +4,86 @@ import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from './imgs/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe, faChevronDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   const { t, i18n } = useTranslation();
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const languageRef = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
-      const handleClickOutside = (event) => {
-          if (languageRef.current && !languageRef.current.contains(event.target)) {
-              setIsLanguageOpen(false);
-          }
-      };
+    const handleClickOutside = (event) => {
+      if (languageRef.current && !languageRef.current.contains(event.target)) {
+        setIsLanguageOpen(false);
+      }
+    };
 
-      document.addEventListener('mousedown', handleClickOutside);
-      return () => {
-          document.removeEventListener('mousedown', handleClickOutside);
-      };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
   }, []);
 
   const toggleLanguageMenu = () => {
-      setIsLanguageOpen(!isLanguageOpen);
+    setIsLanguageOpen(!isLanguageOpen);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const changeLanguage = (lng) => {
-      i18n.changeLanguage(lng);
-      localStorage.setItem('language', lng);
-      setIsLanguageOpen(false);
+    i18n.changeLanguage(lng);
+    localStorage.setItem('language', lng);
+    setIsLanguageOpen(false);
   };
 
   const navItems = [
-      { path: "/", text: t("الرئيسية") },
-      { path: "/videos", text: t("الفيديوهات") },
-      { path: "/quran", text: t("القرآن الكريم") },
-      { path: "/library", text: t("الملفات التفاعلية") },
-      { path: "/apps", text: t("تطبيقات إسلامية") },
-      { path: "/anotherweb", text: t("مواقع إسلامية أخرى") }
+    { path: "/", text: "الرئيسية" },
+    { path: "/videos", text: "الفيديوهات" },
+    { path: "/quran", text: "القرآن الكريم" },
+    { path: "/library", text: "الملفات التفاعلية" },
+    { path: "/apps", text: "تطبيقات إسلامية" },
+    { path: "/anotherweb", text: "مواقع إسلامية أخرى" }
   ];
     
           
     return (
         <>
-          <header>
-              <div className="header-pattern"></div>
-              <div className="top-nav">
-                <div className="logo-container">
-                  <div className='scrolling'>{t("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ")}</div>
-                  <img src={Logo} alt="منافع" className="logo" />
-                </div>
-              </div>
-              <nav className="main-nav">
-              <ul className="nav-menu">
-              {navItems.map((item) => (
-                    <li key={item.path}>
-                      <Link
-                        to={item.path}
-                        className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
-                      >
-                        {t(item.text)}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                <div className="language-dropdown" ref={languageRef}>
-                  <button className="language-btn" onClick={toggleLanguageMenu}>
-                    <FontAwesomeIcon icon={faGlobe} />
-                    {t('العربية')}
-                    <FontAwesomeIcon icon={faChevronDown} />
-                  </button>
-                  <div className={`language-content ${isLanguageOpen ? 'show' : ''}`}>
+          <header className={i18n.dir()}>
+      <div className="header-pattern"></div>
+      <div className="top-nav">
+        <div className="logo-container">
+          <div className='scrolling'>{t("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ")}</div>
+          <img src={Logo} alt="منافع" className="logo" />
+        </div>
+      </div>
+      <nav className="main-nav">
+        <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
+          <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
+        </button>
+        <ul className={`nav-menu ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+          {navItems.map((item) => (
+            <li key={item.path}>
+              <Link
+                to={item.path}
+                className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t(item.text)}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="language-dropdown" ref={languageRef}>
+          <button className="language-btn" onClick={toggleLanguageMenu}>
+            <FontAwesomeIcon icon={faGlobe} />
+            {t('العربية')}
+            <FontAwesomeIcon icon={faChevronDown} />
+          </button>
+          <div className={`language-content ${isLanguageOpen ? 'show' : ''}`}>
                     <a href="#" onClick={() => changeLanguage('ar')}>العربية</a>
                     <a href="#" onClick={() => changeLanguage('en')}>English</a>
                     <a href="#" onClick={() => changeLanguage('fr')}>Français</a>

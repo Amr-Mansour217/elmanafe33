@@ -2,9 +2,10 @@ header {
     background-color: var(--primary-color);
     position: relative;
     overflow: hidden;
+    /* overflow-x: hidden; */
   }
 .header-pattern {
-    position: absolute;
+    /* position: absolute; */
     width: 100vw;
     /* height: 100%; */
     /* background-image: url('https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/simple-icons.svg'); */
@@ -160,7 +161,7 @@ header {
     visibility: hidden;
     position: fixed;
     /* left: 0; */
-    top: 15vh;
+    /* top: 15vh; */
     background-color: white;
     border-radius: 8px;
     width: 180px;
@@ -180,7 +181,7 @@ header {
     padding: 10px 20px;
     color: var(--text-color);
     text-decoration: none;
-    transition: all 0.2s;
+    /* transition: all 0.2s; */
   }
   
   .language-content a:hover {
@@ -204,3 +205,101 @@ header {
       margin-bottom: 15px;
     }
   }
+  /* الأنماط الموجودة تبقى كما هي */
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  color: var(--white);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  /* top: 20px; */
+  z-index: 1101;
+}
+
+@media (max-width: 1024px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .main-nav .nav-menu {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--primary-color);
+    padding: 60px 20px 20px;
+    z-index: 1100;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    cursor: unset;
+    animation: visibilityTrans .3s linear;
+  }
+  .nav-menu .nav-link {
+    visibility: visible;
+    animation: visibilityTrans .3s linear;
+  }
+
+  .rtl .main-nav .nav-menu {
+    left: 0;
+    transform: translateX(-100%);
+    visibility: hidden;
+    animation: visibilityTrans .3s linear;
+  }
+  
+  .ltr .main-nav .nav-menu {
+    right: 0;
+    animation: visibilityTrans .3s linear;
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+  
+  .main-nav .nav-menu.mobile-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  @keyframes visibilityTrans {
+    0% {visibility: hidden;}
+    99.9% {visibility: hidden;}
+    100% {visibility: visible;}
+  }
+  
+  .main-nav .nav-menu li {
+    margin: 10px 0;
+    animation: visibilityTrans .3s linear;
+  }
+
+  .rtl .mobile-menu-btn {
+    left: 20px;
+  }
+
+  .ltr .mobile-menu-btn {
+    right: 20px;
+  }
+
+  .rtl .language-dropdown {
+    right: 20px;
+  }
+
+  .ltr .language-dropdown {
+    left: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .main-nav .nav-menu {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-nav .nav-menu {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+}

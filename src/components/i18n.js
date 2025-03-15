@@ -536,5 +536,6 @@ i18n
   export const getDirection = (language) => {
     return ['ar', 'fa', 'ur'].includes(language) ? 'rtl' : 'ltr';
   };
+  // document.documentElement.dir = i18n.dir();
 
 export default i18n;
