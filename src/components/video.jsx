@@ -342,6 +342,110 @@ function Videos(){
             },
         ],
         fr: [
+            {
+                id: 1,
+                title: "Cours 1: La croyance (Al Aquida)",
+                description: "introduction de la Rissâla de Ibn Abi Zayd al-Qayrawân",
+                link: "https://www.youtube.com/embed/m9cn-hkFcWQ",
+                category: 'aqeedah'
+            },
+            {
+                id: 2,
+                title: "[1]Al `Aquîda Al-Wassitiya ",
+                description: "Voici une explication du livre Al `Aquîda Al-Wassitiya (La Profession de Foi)",
+                link:"https://www.youtube.com/embed/2tR3KHseAkg?list=PLRDM2C56WTKEqkajD2htFLxffjeXgfC2j",
+                category: 'aqeedah'
+            },   {
+                id: 3,
+                title: "[2] Al `Aquîda Al-Wassitiya",
+                description: "Voici une explication du livre Al `Aquîda Al-Wassitiya (La Profession de Foi)",
+                link:"https://www.youtube.com/embed/p_7cW82qxJQ?list=PLRDM2C56WTKEqkajD2htFLxffjeXgfC2j",
+                category: 'aqeedah'
+            },   {
+                id: 4,
+                title: "COMMENT RATTRAPER SES PRIÈRES. (fiqh mâliki) ",
+                description: "Le clip explique comment rattraper ses prières.",
+                link:"https://www.youtube.com/embed/Eev8eCFJB-8?list=PLiGphLNkyYRd9cKcyEU8TEUpQitmz-ZR7" ,
+                category: 'fiqh'
+            },   {
+                id: 5,
+                title: "COMMENT CORRIGER SA PRIÈRE (prosternations de l'oubli). ",
+                description: "Le clip parle de la prière correcte et de la manière de corriger la prière si vous faites une erreur.",
+                link:"https://www.youtube.com/embed/yvKnJTlxqFE?list=PLiGphLNkyYRd9cKcyEU8TEUpQitmz-ZR7",
+                category: 'fiqh'
+            },   {
+                id: 6,
+                title: "Tafsir Imam Sékou Sylla - Sourate Al Baqara Verset 183 à 184",
+                description: "Sourate Al Baqara Verset 183 à 184",
+                link:"https://www.youtube.com/embed/z3poKjmqa5Q?list=PLQQKxe64Xf055MOReJxVT8TRpZ7fj5gsf" ,
+                category: 'tafseer'
+            },   {
+                id: 7,
+                title: "Tafsir Imam Sékou Sylla - Sourate Adh-dhariyat Verset 38 à 51 ",
+                description: "Tafsir en français du jeudi 28-12-2023 ",
+                link:"https://www.youtube.com/embed/EXUmDwPalEU?list=PLQQKxe64Xf055MOReJxVT8TRpZ7fj5gsf",
+                category: 'tafseer'
+            },   {
+                id: 8,
+                title: "Tafsir Imam Sékou Sylla : Sourate An-Najm - Verset 33 à 46",
+                description: "Interprétation de la sourate An-Najm en français",
+                link:"https://www.youtube.com/embed/Ht5Qxv2WECQ?list=PLQQKxe64Xf055MOReJxVT8TRpZ7fj5gsf",
+                category: 'tafseer'
+            },   {
+                id: 9,
+                title: "La Sirah du Prophète Muhammad(SAW) EP 1",
+                description: "Cheikh Yasir Qadhi donne une analyse détaillée de la vie du Prophète Muhammad (que la paix soit sur lui) à partir des sources originales.",
+                link:"https://www.youtube.com/embed/H8dzFGR9aoY?list=PLYZxc42QNctXvxDw9LaQk02Nskb2iJTmd",
+                category: 'seerah'
+            },   {
+                id: 10,
+                title: "La Sirah du Prophète Muhammad(SAW) EP 2",
+                description: "Cheikh Yasir Qadhi donne une analyse détaillée de la vie du Prophète Muhammad (que la paix soit sur lui) à partir des sources originales.",
+                link:"https://www.youtube.com/embed/yIiOy1ajig4?list=PLYZxc42QNctXvxDw9LaQk02Nskb2iJTmd",
+                category: 'seerah'
+            },   {
+                id: 11,
+                title: "La Sirah du Prophète Muhammad(SAW) EP 3",
+                description: "Cheikh Yasir Qadhi donne une analyse détaillée de la vie du Prophète Muhammad (que la paix soit sur lui) à partir des sources originales.",
+                link:"https://www.youtube.com/embed/HMHxNd7MifE?list=PLYZxc42QNctXvxDw9LaQk02Nskb2iJTmd",
+                category: 'seerah'
+            },   {
+                id: 12,
+                title: "H1 - Les 40 Hadîth de Nawawi",
+                description: "Un hadith sur l'intention",
+                link:"https://www.youtube.com/embed/dCUvuXYu_9Y?list=PLxJLu-ZcLtGfTZCV9oLOgNcsAL0j88qWJ",
+                category: 'hadith'
+            },   {
+                id: 13,
+                title: "H2 - les 40 Hadîth de Nawawi ",
+                description: "Un hadith sur l'intention",
+                link:"https://www.youtube.com/embed/T76mNdKhsZ4?list=PLxJLu-ZcLtGfTZCV9oLOgNcsAL0j88qWJ",
+                category: 'hadith'
+            },   {
+                id: 14,
+                title: " Les 40 hadith de l'imam An-Nawawi (français)",
+                description: "La foi (Iman) : Ce qui constitue la base de la croyance musulmane, les principes de l'unicité de Dieu et la place du prophète Muhammad (paix soit sur lui).",
+                link:"https://www.youtube.com/embed/b2Uuq50Ur_Q",
+                category: 'hadith'
+            },   {
+                id: 15,
+                title: "Écoute et tu verras la vie autrement (Conférence) ",
+                description: "Pour apprendre en famille ce qu’il incombe à tout musulman de connaître, nous avons développé pour vous la plateforme Dini.",
+                link:"https://www.youtube.com/embed/oDrOxXHMv_4" ,
+                category: 'hadith'
+            },   {
+                id: 16,
+                title: "Science et éthique en islam / en français - Al-Mansour Al-Hudhaili",
+                description: "Le clip parle de l’importance de la morale dans la religion islamique.",
+                link:"https://www.youtube.com/embed/D7A7xiIi4G0" ,
+                category: 'akhlaq'
+            },   {
+                id: 17,
+                title: "Bonnes mœurs",
+                description: "Les bonnes mœurs sont les valeurs et les normes qui définissent le comportement d’un individu et le guident dans ses relations avec les autres.",
+                link:"https://www.youtube.com/embed/An2d2E44q2U",
+                category: 'akhlaq'
+            },
       
         ],
         tr: [
