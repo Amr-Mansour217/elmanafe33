@@ -449,7 +449,57 @@ function Videos(){
       
         ],
         tr: [
-    
+            {
+                id: 1,
+                title: "DHBT MBSTS ÖABT DKAB INANÇ ESASLARI - UNITE 1 - DIN VE INANÇ 🕋",
+                description: "Klipte İslam inancının esasları anlatılıyor.",
+                link:"https://www.youtube.com/embed/aqXM_hM20hI?list=PLTfYWRDOnXGkMUYA7kYE65D1-GoB2JpRL" ,
+                category: 'aqeedah'
+            },   {
+                id: 2,
+                title: "İSLAM İNANÇ ESASLARI - ÜNİTE 2 - İSLAM DİNİ ve İNANCI",
+                description: "Klipte İslam inancının esasları anlatılıyor.",
+                link:"https://www.youtube.com/embed/yFp6bI-hNQg?list=PLTfYWRDOnXGkMUYA7kYE65D1-GoB2JpRL",
+                category: 'aqeedah'
+            },   {
+                id: 3,
+                title: "1- Fıkıh ve İslam Hukuku | Fıkha Giriş | Yakup Özcan",
+                description: "Klipte İslam fıkhından bahsediliyor.",
+                link:"https://www.youtube.com/embed/1xRTiqXeMK0" ,
+                category: 'fiqh'
+            },   {
+                id: 4,
+                title: "2- İslam Hukuku'nun Oluşum Süreci | Fıkha Giriş | Yakup Özcan ",
+                description: "Klipte İslam hukukunun doğuşu anlatılıyor.",
+                link:"https://www.youtube.com/embed/Jz6o_xz_qJc",
+                category: 'fiqh'
+            },   {
+                id: 5,
+                title: "İslam’da Söz | Meâric Suresi Tefsiri 7 | Halis Bayancuk Hoca",
+                description: "Şeyh, Mearic Suresi'ni açıklıyor",
+                link:"https://www.youtube.com/embed/yL3ba9-UUoY" ,
+                category: 'tafseer'
+            },   {
+                id: 6,
+                title: "Hz Muhammed'in Hikmet Dolu 40 Sözü // 40 Hadis Hayatınıza Işık Tutacak Sözler",
+                description: "Klipte Hz. Muhammed'in (s.a.v.) hadisleri anlatılıyor.",
+                link:"https://www.youtube.com/embed/6Yc3IbxjaeA" ,
+                category: 'hadith'
+            },
+            {
+                id: 7,
+                title: "Son Din İslam | Saadettin Acar | Konu: Ahlak",
+                description: "Ben dersimi Yüce Allah'tan aldım.",
+                link:"https://www.youtube.com/embed/iohNcClWNqk",
+                category: 'akhlaq'
+            },
+            {
+                id: 8,
+                title: "Hz. Muhammed'in (asm) Hayatı - Neden Siyer Öğrenmeliyiz? - Bölüm 1",
+                description: "Klipte Hz. Muhammed'in (s.a.v.) hayatı anlatılıyor.",
+                link:"https://www.youtube.com/embed/DcrrhvlwJIY",
+                category: 'seerah'
+            },
         ],
         id: [
     
