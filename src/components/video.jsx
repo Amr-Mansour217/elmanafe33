@@ -314,32 +314,47 @@ function Videos(){
         ur: [  
             {
                 id: 1,
-                title: "عقیدہ کی اہمیت",
-                description: "عقیدہ کی اہمیتعقیدہ کی اہمیت",
-                link: 'https://www.youtube.com/embed/GqFrODsIPlQ?si=llaU_0ED6T2azXV1',
-                category: 'seerah'
-            },
-            {
+                title: "اسلام کی ضروری باتیں || علم دین سیکھنا ضروری کیوں",
+                description: "اسلام کے بارے میں بنیادی امور پر بحث کرنے والا کلپ",
+                link:"https://www.youtube.com/embed/IAtw3fPLcRc"   ,
+                category: 'fiqh'
+            },   {
                 id: 2,
-                title: "عام غلطیوں کی وضاحت اور سورۃ الفاتحہ پڑھنے کا صحیح طریقہ",
-                description: "عقیدہ کی اہمیتعقیدہ کی اہمیت",
-                link: 'https://www.youtube.com/embed/2DmMjDj4KMQ?si=4Myueswq1qDh3Hdl',
-                category: 'fiqh'
-            },
-            {
+                title: "أنوار هدايت / قران کریم کے پاروں کا خلاصہ / آسان اور سہل انداز میں",
+                description: "قرآن پاک کی تفسیر",
+                link:"https://www.youtube.com/embed/w2MT7w9rbRM"  ,
+                category: 'tafseer'
+            },   {
                 id: 3,
-                title: "عقیدہ کی اہمیت",
-                description: "عقیدہ کی اہمیتعقیدہ کی اہمیت",
-                link: 'https://www.youtube.com/embed/GqFrODsIPlQ?si=llaU_0ED6T2azXV1',
-                category: 'fiqh'
-            },
-            {
+                title: "سیرت نبوی صلی اللہ علیہ وسلم",
+                description: "سیرت النبی صلی اللہ علیہ وسلم کے بارے میں ایک کلپ، خدا ان پر رحم کرے",
+                link:"https://www.youtube.com/embed/WkdD0TVYHOI"  ,
+                category: 'seerah'
+            },   {
                 id: 4,
-                title: "عقیدہ کی اہمیت",
-                description: "عقیدہ کی اہمیتعقیدہ کی اہمیت",
-                link: 'https://www.youtube.com/embed/GqFrODsIPlQ?si=llaU_0ED6T2azXV1',
-                category: 'aqeedah'
-            },
+                title: "نبی ﷺ کا نسب نامہ ",
+                description: "سلسلۂ نسب کے متعلق ایک کلپ",
+                link:"https://www.youtube.com/embed/k3tC2IUafPc"  ,
+                category: 'seerah'
+            },   {
+                id: 6,
+                title: "نبی ﷺ کے والد کی شادی، وفات اور ترکہ",
+                description: "نبی صلی اللہ علیہ وسلم کی سیرت اور آپ کے والد کی شادی کے بارے میں ایک کلپ",
+                link:"https://www.youtube.com/embed/LBrisEsdCQ0"  ,
+                category: 'seerah'
+            },   {
+                id: 7,
+                title: "نبی ﷺ کی ولادت اور رضاعت",
+                description: "سیرت نبوی محمد صلی اللہ علیہ وسلم",
+                link:"https://www.youtube.com/embed/4YQkorWEMas"  ,
+                category: 'seerah'
+            },   {
+                id: 8,
+                title: "شقًٓ صدر کا واقعہ اور مہر نبوت کا تذکرہ",
+                description: "سیرت نبوی محمد صلی اللہ علیہ وسلم",
+                link:"https://www.youtube.com/embed/h5lLbqqZJfc"   ,
+                category: 'seerah'
+            },   
         ],
         fr: [
             {
@@ -502,24 +517,443 @@ function Videos(){
             },
         ],
         id: [
+            {
+                id: 1,
+                title: "[Serial Aqidah] Eps. 1: Pondasi Iman - Ustadz Adi Hidayat",
+                description: "Klip tersebut berbicara tentang dasar keimanan.",
+                link:"https://www.youtube.com/embed/VYD_2fsylcM" ,
+                category: 'aqeedah'
+            },
+
+            {
+                id: 2,
+                title: "[Serial Aqidah] Eps. 2: Pokok-Pokok Iman - Ustadz Adi Hidayat",
+                description: "Klip tersebut berbicara tentang dasar keimanan.",
+                link:"https://www.youtube.com/embed/VYD_2fsylcM" ,
+                category: 'aqeedah'
+            },
+              {
+                id: 3,
+                title: "[Serial Fiqh Eps 1] Bab Pendahuluan Fiqh Sholat - Ustadz Adi Hidayat",
+                description: "Klip tersebut membahas tentang yurisprudensi shalat.",
+                link:"https://www.youtube.com/embed/_OWAc3cPerU?list=PL3iW_rlEoH5LiWstWEY6bZFIDb7oHXz4h"  ,
+                category: 'fiqh'
+            },  {
+                id: 4,
+                title: "[Serial Fiqh Eps 2] Tata Cara Sholat - Ustadz Adi Hidayat",
+                description: "Situs tersebut membahas tentang tata cara shalat.",
+                link:"https://www.youtube.com/embed/uUsJQutYuAU?list=PL3iW_rlEoH5LiWstWEY6bZFIDb7oHXz4h"  ,
+                category: 'fiqh'
+            },  {
+                id: 5,
+                title: "[Serial Fiqh Eps 3] Tata Cara Wudhu - Ustadz Adi Hidayat",
+                description: "Klip tersebut berbicara tentang aturan wudhu.",
+                link:"https://www.youtube.com/embed/h__PMrkx0Tc?list=PL3iW_rlEoH5LiWstWEY6bZFIDb7oHXz4h" ,
+                category: 'fiqh'
+            },  {
+                id: 6,
+                title: "Kajian Bakda Subuh Tafsir Al-Insyirah - Ustadz Adi Hidayat",
+                description: "Klip ini membahas kajian tafsir berita setelah sahur - Profesor Adi Hidaya",
+                link:"https://www.youtube.com/embed/L5Dt_BaG3kQ" ,
+                category: 'tafseer'
+            },  {
+                id: 7,
+                title: "Tafsir Surah Adh-Dhuha - Ustadz Adi Hidayat",
+                description: "Klip ini berbicara tentang tafsir Surat Ad-Duha.",
+                link:"https://www.youtube.com/embed/W7wZStf3iiE"   ,
+                category: 'tafseer'
+            },  {
+                id: 8,
+                title: "Sirah Nabawiyah #1 : Pengantar Sirah Nabawiyah - Khalid Basalamah",
+                description: "Klip tersebut berbicara tentang biografi Nabi Muhammad.",
+                link:"https://www.youtube.com/embed/BWgwRJjm3sc?list=PLlK0gGuioshBgZZf8VOC4IonQtFxPsifW"  ,
+                category: 'seerah'
+            },  {
+                id: 9,
+                title: "Sirah Nabawiyah Episode Two - History of Makkah Establishment",
+                description: "Klip ini berbicara tentang sejarah Mekkah.",
+                link:"https://www.youtube.com/embed/hHkxhDdkBWk?list=PLlK0gGuioshBgZZf8VOC4IonQtFxPsifW"  ,
+                category: 'seerah'
+            },
+            {
+                id: 10,
+                title: "E1] Sirah Rasulullah ﷺ - Kelahiran Baginda Membawa Rahmat Kepada Sekalian Alam | Ustaz Wadi Annuar",
+                description: "Klip ini berbicara tentang kelahiran Nabi Muhammad.",
+                link:"https://www.youtube.com/embed/VYD_2fsylcM" ,
+                category: 'seerah'
+            },{
+                id: 11,
+                title: "Kisah Nabi Muhammad SAW dari Lahir Hingga Wafat | Ustadz Abdul Somad",
+                description: "Klip ini bercerita tentang kisah hidup Nabi dari lahir hingga wafat.",
+                link:"https://www.youtube.com/embed/pij8PGbhZwM" ,
+                category: 'hadith'
+            },{
+                id: 12,
+                title: "Perbedaan Adab Dan Akhlak - Ustadz Adi Hidayat",
+                description: "Klip ini membahas tentang perbedaan moral dan etika - Profesor Adi Hidaya",
+                link:"https://www.youtube.com/embed/PcntEfe6R_k"  ,
+                category: 'akhlaq'
+            },
+            {
+                id: 13,
+                title: "Ustaz Amin - Maksud Akhlak Dalam Islam",
+                description: "Klip tersebut berbicara tentang makna akhlak dalam Islam.",
+                link:"https://www.youtube.com/embed/l8iACx2hG-U" ,
+                category: 'akhlaq'
+            },
     
         ],
         ru: [
+            
+           
+              {
+                id: 1,
+                title: "Правильная АКЫДА! | Вероубеждения АХЛЮ СУННА валь джамаа | Юсуф Берхудар",
+                description: "В клипе рассказывается о верованиях Ахль ас-Сунна валь-Джамаа.",
+                link:"https://www.youtube.com/embed/HTnW5v0CUCA"  ,
+                category: 'aqeedah'
+            },   {
+                id: 2,
+                title: "Акида ( Вероубеждение ) ОЗВУЧКА - Шейх Ибн аль - Усаймин / напоминание братья и сёстры",
+                description: "Клип об исламской вере",
+                link:"https://www.youtube.com/embed/fKWI07hD0h4" ,
+                category: 'aqeedah'
+            },   {
+                id: 3,
+                title: "Ustaz Amin - Maksud Akhlak Dalam Islam",
+                description: "Klip tersebut berbicara tentang makna akhlak dalam Islam.",
+                link:"https://www.youtube.com/embed/l8iACx2hG-U" ,
+                category: 'fiqh'
+            },   {
+                id: 4,
+                title: "Введение в фикх. Что такое Шариат?",
+                description: "Клип о законах шариата",
+                link:"https://www.youtube.com/embed/Y2yIrM-JP8c"  ,
+                category: 'fiqh'
+            },   {
+                id: 6,
+                title: "удрость в Коране. Часть 1 из 7 | Нуман Али Хан",
+                description: "Клип о мудрости в Священном Коране",
+                link:"https://www.youtube.com/embed/znlevKeCXpE" ,
+                category: 'tafseer'
+            },   {
+                id: 7,
+                title: "Зависть как грех в исламе. Уроки из суры ан-Ниса | Нуман Али Хан (rus sub)",
+                description: "Клип, в котором рассказывается об уроках из суры «Ан-Ниса»",
+                link:"https://www.youtube.com/embed/vegaAvUs2Cw"  ,
+                category: 'tafseer'
+            },   {
+                id: 8,
+                title: "Сира Пророка Мухаммада ﷺ | Предисловие 1 из 29 | Муфтий Менк",
+                description: "Клип о биографии Пророка Мухаммеда, да благословит его Аллах и приветствует.",
+                link:"https://www.youtube.com/embed/6gpHSUKg9EA"  ,
+                category: 'seerah'
+            },   {
+                id: 9,
+                title: "Сира Пророка Мухаммада ﷺ | Времена язычества и Рождение 2 из 29 | Муфтий Менк",
+                description: "История битвы началась 2 февраля 29 г.",
+                link:"https://www.youtube.com/embed/AIy5D4DqAEY"  ,
+                category: 'seerah'
+            },
+            {
+                id: 10,
+                title: "24 хадиса от Пророка, которые изменят вашу жизнь | Время покаяния",
+                description: "Клип о 24 пророческих хадисах, которые изменят вашу жизнь.",
+                link:"https://www.youtube.com/embed/vLgrsh51VTU" ,
+                category: 'hadith'
+            },
+            {
+                id: 11,
+                title: "БЛАГОЙ НРАВ НА ДЕЛЕ | Одна из самых прекрасных лекций шейха Абдурраззак Аль Бадра",
+                description: "Клип о хорошем человеке на работе",
+                link:"https://www.youtube.com/embed/n-rcEGYshog" ,
+                category: 'hadith'
+            },
+            
     
         ],
         hi: [
+            {
+                id: 1,
+                title:`शीर्षक: "इस्लाम के बारे में आवश्यक बातें || धार्मिक ज्ञान सीखना क्यों ज़रूरी है",`,
+                description:`इस्लाम के बारे में बुनियादी मुद्दों पर चर्चा करने वाली एक क्लिप।`,
+                link:"https://www.youtube.com/embed/IAtw3fPLcRc"   ,
+                category: 'fiqh'
+            },   {
+                id: 2,
+                title: `अनवर हिदायत / पवित्र कुरान की आयतों का सारांश / सरल और आसान तरीके से`,
+                description: `पवित्र कुरान की व्याख्या`,
+                link:"https://www.youtube.com/embed/w2MT7w9rbRM"  ,
+                category: 'tafseer'
+            },   {
+                id: 3,
+                title: `पैगम्बर (सल्लल्लाहु अलैहि वसल्लम) की जीवनी`,
+                description: `पैगंबर (शांति उन पर हो) की जीवनी के बारे में एक क्लिप, भगवान उन पर दया करें।`,
+                link:"https://www.youtube.com/embed/WkdD0TVYHOI"  ,
+                category: 'seerah'
+            },   {
+                id: 4,
+                title: `पैगम्बर की वंशावली`,
+                description: `वंशावली के बारे में एक क्लिप`,
+                link:"https://www.youtube.com/embed/k3tC2IUafPc"  ,
+                category: 'seerah'
+            },   {
+                id: 6,
+                title: `पैगम्बर (स.) के पिता का विवाह, मृत्यु और विरासत`,
+                description: `पैगम्बर (सल्लल्लाहू अलैहि वसल्लम) की जीवनी और आपके पिता की शादी के बारे में एक क्लिप।`,
+                link:"https://www.youtube.com/embed/LBrisEsdCQ0"  ,
+                category: 'seerah'
+            },   {
+                id: 7,
+                title: `पैगम्बर (सल्लल्लाहु अलैहि व सल्लम) का जन्म और स्तनपान`,
+                description: "पैगम्बर मुहम्मद (उन पर शांति हो) की जीवनी",
+                link:"https://www.youtube.com/embed/4YQkorWEMas"  ,
+                category: 'seerah'
+            },   {
+                id: 8,
+                title: `सद्र की घटना और नबूवत की मुहर का उल्लेख`,
+                description: "पैगंबर मुहम्मद (उन पर शांति हो) की जीवनी",
+                link:"https://www.youtube.com/embed/h5lLbqqZJfc"   ,
+                category: 'seerah'
+            },   
     
         ],
         bn: [
+
+            {
+                id: 1,
+                title: "1-ভূমিকা পর্ব: তিনটি মূলনীতির ধারাবাহিক ক্লাস।আলোচকঃ আব্দুর রব আফ্ফান,দ্বীরা সেন্টার রিয়াদ সৌদি আরব।",
+                description: "তিনটি মৌলিক নীতির উপর ধারাবাহিক বক্তৃতা সম্পর্কে একটি ক্লিপ।",
+                link:"https://www.youtube.com/embed/9TkZdhf51Po"  ,
+                category: 'aqeedah'
+            },   {
+                id: 2,
+                title: "আকীদা সংক্রান্ত ভুল-ত্রুটি পর্ব ১",
+                description: "বাংলা পর্বে বিশ্বাসের ভুল",
+                link:"https://www.youtube.com/embed/UrRrlCAScas"  ,
+                category: 'aqeedah'
+            },   {
+                id: 3,
+                title: "শেখ আব্দুল রাজ্জাকের বাংলায় ইসলামের পরিচয়ের একটি বক্তৃতা।",
+                description: "ইসলামের ভূমিকা সম্পর্কে শেখ আব্দুল রাজ্জাকের একটি বক্তৃতা",
+                link:"https://www.youtube.com/embed/LN3FGPSqxiQ" ,
+                category: 'aqeedah'
+            },   {
+                id: 4,
+                title: "ফিকহ পাঠ্যক্রম, দ্বিতীয় স্তর, পর্ব ১/১০, বাংলায়, প্রচারক মামুন আল-রশিদ, টিচ মি ইসলাম স্কুল",
+                description: "ধর্মপ্রচারক মামুন আল-রশিদের আইনশাস্ত্রের পদ্ধতি",
+                link:"https://www.youtube.com/embed/k3tC2IUafPc"  ,
+                category: 'fiqh'
+            },   {
+                id: 6,
+                title: "নামাজ পড়ার সঠিক পদ্ধতি",
+                description: "প্রার্থনার সঠিক পদ্ধতি সম্পর্কে একটি ক্লিপ",
+                link:"https://www.youtube.com/embed/XuTTXcd0-aY" ,
+                category: 'fiqh'
+            },   {
+                id: 7,
+                title: "যাকাতুল ফিতর (ফিতরা) | শায়েখ / মোহাম্মদ হুজাইফা ",
+                description: "যাকাত আল ফিতর সম্পর্কে একটি ক্লিপ",
+                link:"https://www.youtube.com/embed/jJhMPqbFV7o"  ,
+                category: 'fiqh'
+            },   {
+                id: 8,
+                title: "উপবাসের অংশগুলি",
+                description: "উপবাসের প্রকারভেদ সম্পর্কে একটি ক্লিপ",
+                link:"https://www.youtube.com/embed/RQ0BV_iBuCM"   ,
+                category: 'fiqh'
+            },   
+            {
+                id: 9,
+                title: "পবিত্র কুরআনের ব্যাখ্যা",
+                description: "বাংলায় পবিত্র কুরআনের তাফসির",
+                link:"https://www.youtube.com/embed/21MWrFaYHzI"   ,
+                category: 'tafseer'
+            },
+            {
+                id: 10,
+                title: "সূরা আল-কাওসারের ব্যাখ্যা",
+                description: "সূরা কাওসার বাংলা অনুবাদ ক্লিপ",
+                link:"https://www.youtube.com/embed/_3aE5GyghwQ"  ,
+                category: 'tafseer'
+            },
+            {
+                id: 11,
+                title: "রমজান কাউন্সিল",
+                description: "বাংলায় বক্তৃতা",
+                link:"https://www.youtube.com/embed/PxE60JKK7Ks" ,
+                category: 'seerah'
+            },
+            {
+                id: 12,
+                title: "নবীর জীবনী অধ্যয়ন",
+                description: "নবীর জীবনী অধ্যয়নের গুরুত্ব সম্পর্কে আলোচনা করা একটি ক্লিপ",
+                link:"https://www.youtube.com/embed/LH_VsQxk3Y4"  ,
+                category: 'seerah'
+            },
     
         ],
         zh: [
+
+            {
+                id: 1,
+                title: "信仰简释",
+                description: "中文信经摘要",
+                link:"https://www.youtube.com/embed/A0FBuWy_d84"   ,
+                category: 'aqeedah'
+            },   {
+                id: 2,
+                title: "伊斯兰教的定义",
+                description: "关于伊斯兰教",
+                link:"https://www.youtube.com/embed/veptdUXYbpM"   ,
+                category: 'aqeedah'
+            },   {
+                id: 3,
+                title: "伊斯兰是什么-2",
+                description: "关于伊斯兰教",
+                link:"https://www.youtube.com/embed/u9ZIAO7fHT8" ,
+                category: 'aqeedah'
+            },   {
+                id: 4,
+                title: "如何祈祷",
+                description: "关于如何祈祷的中文视频",
+                link:"https://www.youtube.com/embed/MciGMMRDbLU"   ,
+                category: 'fiqh'
+            },   {
+                id: 6,
+                title: "卡里姆汗 - 朝觐中文版",
+                description: "有关伊斯兰教朝觐的中文视频",
+                link:"https://www.youtube.com/embed/km_gI7tugX4"  ,
+                category: 'fiqh'
+            },   {
+                id: 7,
+                title: "布哈里圣训 ",
+                description: "有关《布哈里圣训》的中文片段",
+                link:"https://www.youtube.com/embed/z830PPQkZOg"  ,
+                category: 'hadith'
+            },   {
+                id: 8,
+                title: "布哈里圣训实录 - 知识篇 - 第十二部分",
+                description: "布哈里圣训片段",
+                link:"https://www.youtube.com/embed/9jwU9h14wt8"   ,
+                category: 'hadith'
+            },   
+            {
+                id: 9,
+                title: "布哈里圣训实录 - 知识篇 - 第十部分",
+                description: "布哈里圣训片段",
+                link:"https://www.youtube.com/embed/oZ0LjWHmVzE"    ,
+                category: 'hadith'
+            },
+            {
+                id: 10,
+                title: "布哈里圣训实录 - 知识篇 - 第八部分",
+                description: "布哈里圣训片段",
+                link:"https://www.youtube.com/embed/mPEVlFMazFU"   ,
+                category: 'hadith'
+            },
+
+            {
+                id: 11,
+                title: "先知及其同伴在斋月期间的状况",
+                description: "一段关于先知和他的同伴在斋月期间的生活片段",
+                link:"https://www.youtube.com/embed/o8koNdcRAC4"   ,
+                category: 'hadith'
+            },
     
         ],
         tl: [
+            {
+                id: 1,
+                title: "Ano ang Islam?",
+                description: "Isang clip na nagpapaliwanag kung ano ang Islam",
+                link:"https://www.youtube.com/embed/eLKwjvCOMaw"    ,
+                category: 'aqeedah'
+            },   {
+                id: 2,
+                title: "Tuklasin ang Iyong Tunay na Relihiyon - Filipino",
+                description: "Isang video na pang-edukasyon sa Filipino tungkol sa Islam.",
+                link:"https://www.youtube.com/embed/QL6-il8LLkU"   ,
+                category: 'aqeedah'
+            },   {
+                id: 3,
+                title: "Muhammad ﷺ sa Torah at sa Bibliya",
+                description: "Isang Filipino clip tungkol sa kung paano binanggit ang Propeta Muhammad sa parehong Torah at Bibliya.",
+                link:"https://www.youtube.com/embed/6iWoHSfhkCc"  ,
+                category: 'aqeedah'
+            },   {
+                id: 4,
+                title: "Bakit tayo nilikha ng Diyos?",
+                description: "Isang clip na nagsasabi tungkol sa isang tanong na nasa isip ng karamihan ng mga tao: Bakit tayo nilikha ng Diyos?",
+                link:"https://www.youtube.com/embed/90oQt-iuCiY"   ,
+                category: 'aqeedah'
+            },   {
+                id: 6,
+                title: `Kahulugan ng "Walang Diyos kundi si Allah" - Filipino`,
+                description: "Pagpapaliwanag ng kahulugan ng La ilaha illa Allah sa wikang Filipino",
+                link:"https://www.youtube.com/embed/UY3LVFLF6wM"  ,
+                category: 'aqeedah'
+            },   {
+                id: 7,
+                title: "RELIHIYON NG MGA PROPETA",
+                description: "Pinag-uusapan ang relihiyon ng mga propeta",
+                link:"https://www.youtube.com/embed/6fnVoq3jT10"  ,
+                category: 'aqeedah'
+            },   {
+                id: 8,
+                title: "Ang Pamamaraan ng Wudhu at Salah",
+                description: "Pagsasalita sa Filipino tungkol sa paghuhugas at pagdarasal",
+                link:"https://www.youtube.com/embed/orBhUttvg0c"   ,
+                category: 'fiqh'
+            }, 
     
         ],
         fa: [
+
+            {
+                id: 1,
+                title: "آیا اسلام دین جدیدی است؟",
+                description: "شرح دین اسلام و صحبت در مورد آن",
+                link:"https://www.youtube.com/embed/8ZSg3yQM56k"     ,
+                category: 'aqeedah'
+            },   {
+                id: 2,
+                title: "بینش در تماس",
+                description: "صحبت از بصیرت در تبلیغ اسلامی",
+                link:"https://www.youtube.com/embed/uAnDDfmsVgI"    ,
+                category: 'aqeedah'
+            },   {
+                id: 3,
+                title: "ایمان مسلمان",
+                description: "کلیپی در مورد دین اسلام",
+                link:"https://www.youtube.com/embed/MNY4zsXXT_w"   ,
+                category: 'aqeedah'
+            },   {
+                id: 4,
+                title: "شرح دعا",
+                description: "صحبت در مورد چگونگی نماز خواندن",
+                link:"https://www.youtube.com/embed/XuU8qLaOD1s"   ,
+                category: 'fiqh'
+            },   {
+                id: 6,
+                title: `شرح صحيح بخارى `,
+                description: "کلیپی از حدیثی از صحیح بخاری",
+                link:"https://www.youtube.com/embed/R1_MdEbSl1c"   ,
+                category: 'hadith'
+            },   {
+                id: 7,
+                title: "شرح صحيح بخارى 2",
+                description: "کلیپی از حدیثی از صحیح بخاری",
+                link:"https://www.youtube.com/embed/CVsB0GcZlXU"  ,
+                category: 'hadith'
+            },   {
+                id: 8,
+                title: "شرح صحيح بخارى 3",
+                description: "کلیپی از حدیثی از صحیح بخاری",
+                link:"https://www.youtube.com/embed/GakMWfCLLjo"    ,
+                category: 'hadith'
+            }, 
+              
     
         ],
     }
