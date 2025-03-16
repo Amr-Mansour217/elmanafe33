@@ -190,78 +190,125 @@ function Videos(){
                 id: 1,
                 title: 'Basics of Islamic Creed',
                 description: 'Explanation of the most important principles of Islamic creed for beginners',
-                link: "https://www.youtube.com/embed/XPOX5QedkGo?si=M0JFmuWgsHLGt6eh",
+                link: "https://www.youtube.com/embed/2bmwco4Ugfs",
                 category: 'aqeedah'
             },
             {
                 id: 2,
-                title: 'Virtues of Ramadan',
-                description: 'Lecture on the virtues of Ramadan and its importance in Islam',
-                link: "https://www.youtube.com/embed/f8PTOQFl4f4?si=d_qlbHJKMltZsNQf",
-                category: 'fiqh'
+                title: 'An Unexpected Journey: A European Discovers Islam Online and His Life Turns Upside Down',
+                description: 'From online curiosity to converting to Islam... the story of a European man who changed his life completely',
+                link:"https://www.youtube.com/embed/6WcsHia1VoQ",
+                category: 'aqeedah'
             },
             {
                 id: 3,
-                title: 'Virtues of Ramadan',
-                description: 'Lecture on the virtues of Ramadan and its importance in Islam',
-                link: "https://www.youtube.com/embed/UK94ne7RrIM?si=GiFDf1xL4aDjFCu2",
+                title: 'Why do we study Tawheed? | Shaykh Haytham Sarhan (',
+                description: 'The importance of studying monotheism and why we study it',
+                link: "https://www.youtube.com/embed/f8PTOQFl4f4?list=PLBFEt29we81SMpAHBNdD5v1F3Wp2gzxnn" ,
                 category: 'aqeedah'
             },
             {
                 id: 4,
-                title: 'Virtues of Ramadan',
-                description: 'Lecture on the virtues of Ramadan and its importance in Islam',
-                link: 'https://www.youtube.com/embed/8IoNr9Q14WI?si=lBIwXUs7MB6IUnTG',
+                title: 'Concise Explanation of Kitab At Tawheed | Shaykh Haytham Sarhan',
+                description: 'Explanation of the Book of Monotheism in detail',
+                link: "https://www.youtube.com/embed/XPOX5QedkGo?list=PLBFEt29we81RV9tEGDnhI8JB2rWDwgBGT" ,
                 category: 'aqeedah'
             },
             {
                 id: 5,
-                title: 'Virtues of Ramadan',
-                description: 'Lecture on the virtues of Ramadan and its importance in Islam',
-                link: 'https://www.youtube.com/embed/6tJqEU9W4jg?si=q0Vtx54BbPBO2HMn',
-                category: 'seerah'
+                title: 'Fiqh - Semester 1',
+                description: ' Introduction | Shaykh Assim Al-Hakeem | Zad Academy English',
+                link:"https://www.youtube.com/embed/V0tOuxRXgW8?list=PLDOc9rkFwfwD4Yxk6qCwcfnUIXiA6iIeU" ,
+                category: 'fiqh'
             },
             {
                 id: 6,
-                title: 'Virtues of Ramadan',
-                description: 'Lecture on the virtues of Ramadan and its importance in Islam',
-                link: "https://www.youtube.com/embed/GIHr2PmrH_8?si=O9GaryPvxzyCqV9v",
+                title: 'Fiqh - Semester 1 ',
+                description: 'Lecture 1 | Shaykh Assim Al-Hakeem | Zad Academy English',
+                link:"https://www.youtube.com/embed/Zxl94-DFGx4?list=PLDOc9rkFwfwD4Yxk6qCwcfnUIXiA6iIeU" ,
                 category: 'fiqh'
             },
             {
                 id: 7,
-                title: 'Virtues of Ramadan',
-                description: 'Lecture on the virtues of Ramadan and its importance in Islam',
-                link: "https://www.youtube.com/embed/GIHr2PmrH_8?si=O9GaryPvxzyCqV9v",
+                title: 'Description of ablution',
+                description: 'How to perform ablution correctly',
+                link: "https://www.youtube.com/embed/Ilmo9467cBU",
                 category: 'fiqh'
             },
             {
                 id: 8,
-                title: 'Virtues of Ramadan',
-                description: 'Lecture on the virtues of Ramadan and its importance in Islam',
-                link: "https://www.youtube.com/embed/GIHr2PmrH_8?si=O9GaryPvxzyCqV9v",
+                title: 'Nullifiers of ablution',
+                description: 'Explain what are the Nullifiers acts of ablution?',
+                link:"https://www.youtube.com/embed/UK94ne7RrIM" ,
                 category: 'fiqh'
             },
             {
                 id: 9,
-                title: 'Virtues of Ramadan',
-                description: 'Lecture on the virtues of Ramadan and its importance in Islam',
-                link: "https://www.youtube.com/embed/GIHr2PmrH_8?si=O9GaryPvxzyCqV9v",
-                category: 'fiqh'
+                title: 'Surah Al-Faatiha (The Opening) ',
+                description: 'A complete interpretation of Surat Al-Fatihah',
+                link:"https://www.youtube.com/embed/v0r76TgXL4E?list=PLYRXQljU5MiJ8Iz_VKgmatnx-H-leJ7st",
+                category: 'tafseer'
             },
             {
                 id: 10,
-                title: 'Virtues of Ramadan',
-                description: 'Lecture on the virtues of Ramadan and its importance in Islam',
-                link: "https://www.youtube.com/embed/GIHr2PmrH_8?si=O9GaryPvxzyCqV9v",
-                category: 'fiqh'
+                title: 'Alif Laam Meem',
+                description: 'Interpretation of the beginning of Surat Al-Baqarah',
+                link:"https://www.youtube.com/embed/YMNEgAGqAIk?list=PLYRXQljU5MiJ8Iz_VKgmatnx-H-leJ7st",
+                category: 'tafseer'
             },
             {
                 id: 11,
-                title: 'Virtues of Ramadan',
-                description: 'Lecture on the virtues of Ramadan and its importance in Islam',
-                link: "https://www.youtube.com/embed/GIHr2PmrH_8?si=O9GaryPvxzyCqV9v",
-                category: 'fiqh'
+                title: 'Islamic Lectures in English: The Miracles of Muhammad',
+                description: 'Talking about the biography of Muhammad',
+                link:"https://www.youtube.com/embed/izMcJqVRPlQ",
+                category: 'seerah'
+            },
+            {
+                id: 12,
+                title: 'Arabia Before Islam ',
+                description: 'Talking about how Arabs lived in the Arabian Peninsula before the advent of Islam',
+                link:"https://www.youtube.com/embed/BcXSgvJLlYM?list=PLW7-5eCq8IySZOYczT-Z9-vFIBWNH5UMT",
+                category: 'seerah'
+            },
+            {
+                id: 13,
+                title: 'Book 1: Revelation | English AudioBook',
+                description: 'Explanation of a hadith from Sahih al-Bukhari',
+                link:"https://www.youtube.com/embed/4w8VUspnVwM?list=PL7atYSa5SSm7XhiA_JyBaSd-eUSMAZ_yL",
+                category: 'hadith'
+            },
+            {
+                id: 14,
+                title: 'Book 2: Revelation | English AudioBook',
+                description: 'Explanation of a hadith from Sahih al-Bukhari',
+                link:"https://www.youtube.com/embed/s5PSoCHPgB4?list=PL7atYSa5SSm7XhiA_JyBaSd-eUSMAZ_yL",
+                category: 'hadith'
+            },
+            {
+                id: 15,
+                title: 'Morality in the Quran',
+                description: 'A video in English, explaining how the Holy Quran encourages good morals in dealings, such as honesty, fulfilling trusts, generosity, controlling anger, and other good morals that Islam has commanded us to have.',
+                link:"https://www.youtube.com/embed/60NLgmVQt3Y" ,
+                category: 'akhlaq'
+            },
+            {
+                id: 16,
+                title: 'Good manners ',
+                description: 'A clip explaining the importance of morality in Islam',
+                link:"https://www.youtube.com/embed/CHyiIPTy5Ag" ,
+                category: 'akhlaq'
+            },  {
+                id: 17,
+                title: 'good behaviour in islam',
+                description: 'A video clip in English, showing that good treatment is a manifestation of intellectual advancement and psychological purity, which Islam considers a fundamental pillar.',
+                link:"https://www.youtube.com/embed/RFfvMheEnmc" ,
+                category: 'akhlaq'
+            },  {
+                id: 18,
+                title: 'Good Character',
+                description: 'A short video about good morals that we remind each other of',
+                link:"https://www.youtube.com/embed/XkJ6rDjtL_E"  ,
+                category: 'akhlaq'
             },
         ],
         ur: [  
@@ -270,7 +317,7 @@ function Videos(){
                 title: "عقیدہ کی اہمیت",
                 description: "عقیدہ کی اہمیتعقیدہ کی اہمیت",
                 link: 'https://www.youtube.com/embed/GqFrODsIPlQ?si=llaU_0ED6T2azXV1',
-                category: 'aqeedah'
+                category: 'seerah'
             },
             {
                 id: 2,
