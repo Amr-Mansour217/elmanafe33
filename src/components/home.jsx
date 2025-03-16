@@ -84,13 +84,13 @@ const Home = () => {
     ar: [
         {
             id: 1,
-            title: 'أساسيات العقيدة الإسلامية',
-            description: 'شرح لأهم أصول العقيدة الإسلامية للمبتدئين ومجمل أركان الإيمان',
-            link: 'https://www.youtube.com/embed/FsDrBKQy7gM?si=h414kkga6ycM4r5o',
+            title: 'الأخلاق في رمضان',
+            description: 'مقطع يتحث عن الاخلاق غي رمضان',
+            link:"https://www.youtube.com/embed/BYkWHLm4bSk" ,
         },
         {
             id: 2,
-            title: 'فضائل شهر رمضان',
+            title: 'الحلقة الأولى | حديث رمضان | الموسم الأول عنوان الحلقة: إستقبال رمضان',
             description: 'محاضرة عن فضائل شهر رمضان وأهميته في الإسلام',
             link: 'https://www.youtube.com/embed/ZINjuzYQxX4?si=LIMh4FGyhj_5goO6',
         },
@@ -104,15 +104,15 @@ const Home = () => {
     en: [
         {
             id: 1,
-            title: 'Basics of Islamic Creed',
-            description: 'Explanation of the most important principles of Islamic creed for beginners',
-            link: "https://www.youtube.com/embed/XPOX5QedkGo?si=M0JFmuWgsHLGt6eh",
+            title: 'Cleaning up before Ramadan - FULL LECTURE - Mufti Menk',
+            description: 's a thought-provoking and insightful lecture by renowned Islamic scholar Mufti Ismail Menk. In this talk, Mufti Menk discusses the spiritual,',
+            link:"https://www.youtube.com/embed/Q-eK7M4OqSo",
         },
         {
             id: 2,
-            title: 'Virtues of Ramadan',
-            description: 'Lecture on the virtues of Ramadan and its importance in Islam',
-            link: "https://www.youtube.com/embed/f8PTOQFl4f4?si=d_qlbHJKMltZsNQf",
+            title: 'Make The Most of This Month! | Ramadan Reminder 01 | Mufti Menk',
+            description: 'a useful video about how to exploit ramdan',
+            link:"https://www.youtube.com/embed/ufffdfz-Wqc",
         },
         {
             id: 3,
@@ -124,15 +124,15 @@ const Home = () => {
     ur: [  
         {
             id: 1,
-            title: "عقیدہ کی اہمیت",
+            title: "uran Tafseer | Juz 2 | Ramadan Special",
             description: "عقیدہ کی اہمیتعقیدہ کی اہمیت",
             link: 'https://www.youtube.com/embed/GqFrODsIPlQ?si=llaU_0ED6T2azXV1',
         },
         {
             id: 2,
-            title: "عام غلطیوں کی وضاحت اور سورۃ الفاتحہ پڑھنے کا صحیح طریقہ",
+            title: "رمضان کے روزوں کی فضیلت واہمیت",
             description: "عقیدہ کی اہمیتعقیدہ کی اہمیت",
-            link: 'https://www.youtube.com/embed/2DmMjDj4KMQ?si=4Myueswq1qDh3Hdl',
+            link: "https://www.youtube.com/embed/3H-5zH6ZMnw",
         },
         {
             id: 3,
@@ -142,30 +142,200 @@ const Home = () => {
         },
     ],
     fr: [
+
+      {
+        id: 1,
+        title: "RAMADAN : 30 JOURS POUR CHANGER - NADER ABOU ANAS",
+        description: "",
+        link: 'https://www.youtube.com/embed/GqFrODsIPlQ?si=llaU_0ED6T2azXV1',
+    },
+    {
+        id: 2,
+        title: "Le Ramadan - Imam Yacine [ Conférence complète en 4K ]",
+        description: "",
+        link:"https://www.youtube.com/embed/5ylnAaWaino",
+    },
+    {
+        id: 3,
+        title: "Le Ramadan - Imam Yacine ",
+        description: "",
+        link:"https://www.youtube.com/embed/5ylnAaWaino" ,
+    },
       
     ],
     tr: [
+      {
+        id: 1,
+        title: "İslam'da Ramazan ayının yeri ve önemi | Dr. Ömer Demirbağ | Ahmed Şahin | Bir Başka Ramazan",
+        description: "",
+        link:"https://www.youtube.com/embed/UnZNrKdizJE" ,
+    },
+    {
+        id: 2,
+        title: "Ramazan'da Bu 4 Şeyi Kesinlikle Yapın!",
+        description: "",
+        link:"https://www.youtube.com/embed/EG8ewqGifDg",
+    },
+    {
+        id: 3,
+        title: "DHBT MBSTS ÖABT DKAB INANÇ ESASLARI - UNITE 1 - DIN VE INANÇ 🕋",
+        description: "",
+        link:"https://www.youtube.com/embed/aqXM_hM20hI?list=PLTfYWRDOnXGkMUYA7kYE65D1-GoB2JpRL" ,
+    },
 
     ],
     id: [
 
+      {
+        id: 1,
+        title: "Tiga Amalan Pokok Ramadhan - Ustadz Adi Hidayat",
+        description: "",
+        link:"https://www.youtube.com/embed/koE44zuc_ic"  ,
+    },
+    {
+        id: 2,
+        title: "Empat Keistimewaan Ramadhan - Ustadz Adi Hidayat",
+        description: "",
+        link:"https://www.youtube.com/embed/GU59no0BBrw",
+    },
+    {
+        id: 3,
+        title: "Pondasi Iman - Ustadz Adi Hidayat",
+        description: "",
+        link:"https://www.youtube.com/embed/VYD_2fsylcM"  ,
+    },
+
     ],
     ru: [
+
+      {
+        id: 1,
+        title: "ИСТОРИЯ ПОСТА в месяц Рамадан - Доктор Закир Найк",
+        description: "",
+        link:"https://www.youtube.com/embed/XcdBtTBLayU"  ,
+    },
+    {
+        id: 2,
+        title: "ЧТО ТАКОЕ РАМАДАН? Рауф Гаджиев",
+        description: "",
+        link:"https://www.youtube.com/embed/4_p-of9xt8k",
+    },
+    {
+        id: 3,
+        title: "Правильная АКЫДА! | Вероубеждения АХЛЮ СУННА валь джамаа | Юсуф Берхудар",
+        description: "",
+        link:"https://www.youtube.com/embed/HTnW5v0CUCA"  ,
+    },
 
     ],
     hi: [
 
+      {
+        id: 1,
+        title: "Quran Tafseer | Juz 2 | Ramadan Special ",
+        description: "",
+        link:"https://www.youtube.com/embed/vtTw3SHElsQ"  ,
+    },
+    {
+        id: 2,
+        title: "Ramzan Ke Roze Ki Fazilat & Ahmiyat | رمضان کے روزوں کی فضیلت واہمیت Baseerat | بصیرت",
+        description: "",
+        link:"https://www.youtube.com/embed/3H-5zH6ZMnw",
+    },
+    {
+        id: 3,
+        title: "Roze ka Hukm & Roza na Rakhne wale log | روزے کا حکم نیز روزہ نہ رکھنے والے لوگ | Baseerat | بصیرت",
+        description: "",
+        link:"https://www.youtube.com/embed/QlTqvBVI4zI",
+    },
+
     ],
     bn: [
+
+      {
+        id: 1,
+        title: "রমযান কোরআনের মাস  ",
+        description: "",
+        link:"https://www.youtube.com/embed/R5wsOLKlK_E"  ,
+    },
+    {
+        id: 2,
+        title: "ভূমিকা পর্ব: তিনটি মূলনীতির ধারাবাহিক ক্লাস।আলোচকঃ আব্দুর রব আফ্ফান,দ্বীরা সেন্টার রিয়াদ সৌদি আরব।",
+        description: "",
+        link:"https://www.youtube.com/embed/9TkZdhf51Po",
+    },
+    {
+        id: 3,
+        title: "রমযান কোরআনের মাস",
+        description: "",
+        link:"https://www.youtube.com/embed/R5wsOLKlK_E",
+    },
 
     ],
     zh: [
 
+      {
+        id: 1,
+        title: "斋戒的律例",
+        description: "",
+        link:"https://www.youtube.com/embed/5WgqPoiqb08"  ,
+    },
+    {
+        id: 2,
+        title: "Karim Khan－關於開齋節的中文翻譯版。祝大家開齋節快樂",
+        description: "",
+        link:"https://www.youtube.com/embed/iMRMd-1crHQ",
+    },
+    {
+        id: 3,
+        title: "穆圣和他的同伴们怎样度过斋月——马雪平",
+        description: "",
+        link:"https://www.youtube.com/embed/o8koNdcRAC4",
+    },
+
     ],
     tl: [
 
+      {
+        id: 1,
+        title: "Ang kabutihan ng Ramadan at pag-aayuno",
+        description: "",
+        link:"https://www.youtube.com/embed/8oAv_PsVg1s"  ,
+    },
+    {
+        id: 2,
+        title: "Ang pinakamahusay na ng Ramadan",
+        description: "",
+        link:"https://www.youtube.com/embed/UhL6B7PTyBg",
+    },
+    {
+        id: 3,
+        title: "Umrah sa Ramadan - sa Filipino.",
+        description: "",
+        link:"https://www.youtube.com/embed/EyMCtF3b2VE",
+    },
+
     ],
     fa: [
+
+      {
+        id: 1,
+        title: "دروس رمضان - به زبان فارسی دروس رمضان به زبان فارسی",
+        description: "",
+        link:"https://www.youtube.com/embed/6ZIJ4rwiIUI"  ,
+    },
+    {
+        id: 2,
+        title: "آیا اسلام دین جدیدی است؟ به فارسی آیا اسلام دین جدیدی است؟ به زبان فارسی",
+        description: "",
+        link:"https://www.youtube.com/embed/8ZSg3yQM56k" ,
+    },
+    {
+        id: 3,
+        title: "دین اسلام درس زبان فارسی 1 قسمت اول",
+        description: "",
+        link:"https://www.youtube.com/embed/MNY4zsXXT_w" ,
+    },
 
     ],
 }

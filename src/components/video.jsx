@@ -916,7 +916,7 @@ function Videos(){
                 description: "شرح دین اسلام و صحبت در مورد آن",
                 link:"https://www.youtube.com/embed/8ZSg3yQM56k"     ,
                 category: 'aqeedah'
-            },   {
+            },{
                 id: 2,
                 title: "بینش در تماس",
                 description: "صحبت از بصیرت در تبلیغ اسلامی",
