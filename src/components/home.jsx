@@ -1,6 +1,7 @@
 import React, { useState, useEffect,  } from 'react';
 import './home.css';
 import { useTranslation } from 'react-i18next';
+import axios from 'axios';
 // import Logo from './imgs/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faCheckCircle, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
@@ -11,15 +12,16 @@ import Footer from './footer'
 const Home = () => {
 
   const { t, i18n } = useTranslation();
-  const [rating, setRating] = useState(0);
+  const [stars, setStars] = useState(0);  // Changed from rating to stars
   const [hoverRating, setHoverRating] = useState(0);
-  const [feedback, setFeedback] = useState('');
+  const [comment, setComment] = useState('');  // Changed from feedback to comment
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isErrorModalOpen, setIsErrorModalOpen] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const [videos, setVideos] = useState([]);
 
-  const handleStarClick = (selectedRating) => {
-    setRating(selectedRating);
+  const handleStarClick = (selectedStars) => {
+    setStars(selectedStars);  // Changed from setRating to setStars
   };
 
   const handleStarHover = (hoveredRating) => {
@@ -30,21 +32,61 @@ const Home = () => {
     setHoverRating(0);
   };
 
-  const handleFeedbackChange = (e) => {
-    setFeedback(e.target.value);
+  const handleCommentChange = (e) => {  // Changed from handleFeedbackChange
+    setComment(e.target.value);  // Changed from setFeedback to setComment
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (rating === 0 || feedback.trim() === '') {
-      setIsErrorModalOpen(true);
-    } else {
-      setIsModalOpen(true);
-      // هنا يمكنك إضافة الكود لإرسال التقييم إلى الخادم
-      setRating(0);
-      setFeedback('');
-    }
-  };
+  // ... (previous imports)
+    // ... (previous state declarations)
+  
+
+    
+    
+      // ... (previous state declarations)
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (stars === 0 || comment.trim() === '') {  // Changed from rating and feedback
+          setIsErrorModalOpen(true);
+        } else {
+          try {
+            const response = await axios.post('http://srv759235.hstgr.cloud/feedback', {
+              stars: stars,  // Changed from rating to stars
+              comment: comment  // Changed from feedback to comment
+            });
+            
+            if (response.status === 200) {
+              setIsModalOpen(true);
+              setStars(0);  // Changed from setRating to setStars
+              setComment('');  // Changed from setFeedback to setComment
+            } else {
+              throw new Error('Unexpected response from server');
+            }
+          } catch (error) {
+            console.error('Error submitting feedback:', error);
+            let errorMessage = 'An error occurred while submitting feedback.';
+            if (error.response) {
+              errorMessage = `Server error: ${error.response.status}`;
+              if (error.response.data && error.response.data.message) {
+                errorMessage += ` - ${error.response.data.message}`;
+              }
+            } else if (error.request) {
+              errorMessage = 'No response received from server. Please check your internet connection.';
+            } else {
+              errorMessage = error.message;
+            }
+            setIsErrorModalOpen(true);
+            setErrorMessage(errorMessage);
+          }
+        }
+      };
+    
+      // ... (rest of the component remains the same)
+    
+    
+  
+    // ... (rest of the component)
+  
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -415,13 +457,14 @@ useEffect(() => {
       </div>
     </div>
 
+    {/* ... other JSX */}
     <main className="rating-section">
         <h2 className="rating-section-title">{t('شاركنا رأيك')}</h2>
         <div className="stars-container">
           {[1, 2, 3, 4, 5].map((index) => (
             <IoStar
               key={index}
-              className={`star ${(hoverRating || rating) >= index ? 'active' : ''}`}
+              className={`star ${(hoverRating || stars) >= index ? 'active' : ''}`}  // Changed from rating to stars
               onClick={() => handleStarClick(index)}
               onMouseEnter={() => handleStarHover(index)}
               onMouseLeave={handleStarLeave}
@@ -431,12 +474,12 @@ useEffect(() => {
         <form className="feedback-form" onSubmit={handleSubmit}>
           <textarea
             placeholder={t("اكتب تعليقك هنا...")}
-            value={feedback}
-            onChange={handleFeedbackChange}
+            value={comment}  // Changed from feedback to comment
+            onChange={handleCommentChange}  // Changed from handleFeedbackChange
           ></textarea>
           <button type="submit" className="submit-btn">{t("إرسال التقييم")}</button>
         </form>
-      </main>
+        </main>
 
       {isModalOpen && (
         <div className="modal-overlay">
@@ -460,16 +503,19 @@ useEffect(() => {
               <FontAwesomeIcon icon={faCircleXmark} />
             </div>
             <h3 className="modal-title">{t('خطأ!')}</h3>
-            <p className="modal-message">{t('يرجى اختيار عدد النجوم وكتابة تعليق قبل الإرسال')}</p>
+            <p className="modal-message">{errorMessage}</p>
             <button className="modal-close-btn" onClick={closeErrorModal}>
               {t('إغلاق')}
             </button>
           </div>
         </div>
       )}
+      )
       <Footer />
     </>
   );
-};
+
+}
+
 
 export default Home;
