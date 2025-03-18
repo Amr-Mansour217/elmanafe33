@@ -21,7 +21,6 @@ function Intre() {
     { id: 'seerah', name: t('السيرة النبوية') },
     { id: 'hadith', name: t('الحديث') },
     { id: 'akhlaq', name: t('الأخلاق') },
-    { id: 'education', name: t('العلوم التربوية') },
   ];
   
   const allBooks = {

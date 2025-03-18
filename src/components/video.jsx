@@ -24,9 +24,7 @@ function Videos(){
         { id: 'seerah', name: t('السيرة النبوية') },
         { id: 'hadith', name: t('الحديث') },
         { id: 'akhlaq', name: t('الأخلاق') },
-        { id: 'education', name: t('العلوم التربوية') },
     ]
-
     
     const allVideos = {
         ar: [
@@ -354,7 +352,29 @@ function Videos(){
                 description: "سیرت نبوی محمد صلی اللہ علیہ وسلم",
                 link:"https://www.youtube.com/embed/h5lLbqqZJfc"   ,
                 category: 'seerah'
-            },   
+            },
+
+            {
+                id: 9,
+                title: "اسلام میں عقیدہ آخرت کی اہمیت",
+                description: "اسلامی عقیدے کے بارے میں بات کرنا",
+                link:"https://www.youtube.com/embed/9UX21zfbi9Q"   ,
+                category: 'aqeedah'
+            },
+            {
+                id: 10,
+                title: "| اسلامی شریعت میں حدیث کی تعریف کیا ہے ؟ | مولانا ڈاکٹر محمد الیاس فیصل",
+                description: "اسلامی قانون میں احادیث کے بارے میں بات کرنے والا کلپ",
+                link:"https://www.youtube.com/embed/kVVHEXwZOJg"   ,
+                category: 'hadith'
+            },
+            {
+                id: 11,
+                title: "قرآن میں بنیادی انسانی اخلاقیات",
+                description: "قرآن میں اخلاق کے بارے میں ایک کلپ",
+                link:"https://www.youtube.com/embed/dgNmGsshDgM"   ,
+                category: 'akhlaq'
+            },
         ],
         fr: [
             {
@@ -667,7 +687,7 @@ function Videos(){
                 title: "БЛАГОЙ НРАВ НА ДЕЛЕ | Одна из самых прекрасных лекций шейха Абдурраззак Аль Бадра",
                 description: "Клип о хорошем человеке на работе",
                 link:"https://www.youtube.com/embed/n-rcEGYshog" ,
-                category: 'hadith'
+                category: 'akhlaq'
             },
             
     
@@ -715,7 +735,27 @@ function Videos(){
                 description: "पैगंबर मुहम्मद (उन पर शांति हो) की जीवनी",
                 link:"https://www.youtube.com/embed/h5lLbqqZJfc"   ,
                 category: 'seerah'
-            },   
+            }, 
+            {
+                id: 9,
+                title: `रमज़ान के डोनट्स में कदम रखें`,
+                description: "रमजान के दौरान हमें क्या करना चाहिए और क्या नहीं करना चाहिए, इस बारे में एक क्लिप।",
+                link:"https://www.youtube.com/embed/8s4tNCBXEdE"  ,
+                category: 'akhlaq'
+            },   {
+                id: 10,
+                title: `मोजे के ऊपर पोंछने की शर्तें क्या हैं?`,
+                description: "एक क्लिप जिसमें मोजे पोंछने की शर्तों के बारे में बताया गया है।",
+                link:"https://www.youtube.com/embed/GcxI1PaSK7A"   ,
+                category: 'akhlaq'
+            },    
+            {
+                id: 11,
+                title: "इस्लामी कानून में हदीस की परिभाषा क्या है? | मौलाना डॉ. मुहम्मद इलियास फैसल",
+                description: "اسلامی قانون میں احادیث کے بارے میں بات کرنے والا کلپ",
+                link:"https://www.youtube.com/embed/kVVHEXwZOJg"   ,
+                category: 'hadith'
+            }, 
     
         ],
         bn: [
@@ -791,6 +831,20 @@ function Videos(){
                 link:"https://www.youtube.com/embed/LH_VsQxk3Y4"  ,
                 category: 'seerah'
             },
+            {
+                id: 13,
+                title: "নবীজির ৮০টি (গুরুত্বপূর্ণ) ছোট সহিহ হাদীস ",
+                description: "একটি হাদিস থেকে একটি ক্লিপ",
+                link:"https://www.youtube.com/embed/irGuzlLVIB4"  ,
+                category: 'hadith'
+            },
+            {
+                id: 14,
+                title: "ইসলামে নৈতিকতা ও আদর্শ",
+                description: "ইসলামে নীতিশাস্ত্র সম্পর্কে আলোচনা",
+                link:"https://www.youtube.com/embed/6acBpWlxgS8"  ,
+                category: 'akhlaq'
+            },
     
         ],
         zh: [
@@ -860,6 +914,57 @@ function Videos(){
                 link:"https://www.youtube.com/embed/o8koNdcRAC4"   ,
                 category: 'hadith'
             },
+            {
+                id: 12,
+                title: "开端章的解释",
+                description: "开端章完整解读",
+                link:"https://www.youtube.com/embed/-FyrENNecM4"   ,
+                category: 'tafseer'
+            },
+            {
+                id: 13,
+                title: "古兰经第二十二章注释",
+                description: "古兰经第二十二章 完整解释",
+                link:"https://www.youtube.com/embed/cCl6qZubfTI"   ,
+                category: 'tafseer'
+            },{
+                id: 14,
+                title: "古兰经第二十二章注释",
+                description: "古兰经第二十二章 法拉格篇的完整解释",
+                link:"https://www.youtube.com/embed/73kTev4kbbY"   ,
+                category: 'tafseer'
+            },{
+                id: 15,
+                title: "古兰经第二十二章注释",
+                description: "古兰经 1：安纳斯篇的完整解释",
+                link:"https://www.youtube.com/embed/ypoY3XjiqfI"   ,
+                category: 'tafseer'
+            },{
+                id: 16,
+                title: "他为你们而制服天地万物，对于能思维的民众，此中确有许多迹象。",
+                description: "宗教经文",
+                link:"https://www.youtube.com/embed/w2fbj-b8Uro"   ,
+                category: 'tafseer'
+            },{
+                id: 17,
+                title: "先知穆罕默德传记 #1",
+                description: "关于先知穆罕默德传记的片段，愿上帝保佑他并赐予他平安。",
+                link:"https://www.youtube.com/embed/i_vYYU2F4O8"   ,
+                category: 'seerah'
+            },{
+                id: 18,
+                title: "先知传记, 马旭平, 部分 四",
+                description: "关于先知穆罕默德传记的片段，愿上帝保佑他并赐予他平安。",
+                link:"https://www.youtube.com/embed/r-v6FkGFJ0o"   ,
+                category: 'seerah'
+            },
+            {
+                id: 19,
+                title: "伊斯兰教的伦理道德",
+                description: "一段关于伊斯兰教中道德重要性的视频",
+                link:"https://www.youtube.com/embed/7qnvS-QacM8"   ,
+                category: 'akhlaq'
+            },
     
         ],
         tl: [
@@ -905,6 +1010,31 @@ function Videos(){
                 description: "Pagsasalita sa Filipino tungkol sa paghuhugas at pagdarasal",
                 link:"https://www.youtube.com/embed/orBhUttvg0c"   ,
                 category: 'fiqh'
+            }, 
+            {
+                id: 9,
+                title: "Tafsir Jalalain dan Kitab Tafsir Bagus Lainnya",
+                description: "Isang clip na nagsasabi tungkol sa isang tanong na nasa isip ng karamihan ng mga tao: Bakit tayo nilikha ng Diyos?",
+                link:"https://www.youtube.com/embed/lsdVFCsPlFc"   ,
+                category: 'tafseer'
+            },   {
+                id: 10,
+                title: `Sirah Nabawiyah #1 : Pengantar Sirah Nabawiyah`,
+                description: "Pagpapaliwanag ng kahulugan ng La ilaha illa Allah sa wikang Filipino",
+                link:"https://www.youtube.com/embed/BWgwRJjm3sc?list=PLlK0gGuioshBgZZf8VOC4IonQtFxPsifW"  ,
+                category: 'seerah'
+            },   {
+                id: 11,
+                title: "ISLAM TAGALOG LECTURE",
+                description: "Pinag-uusapan ang relihiyon ng mga propeta",
+                link:"https://www.youtube.com/embed/GmDxOdKGf3I"  ,
+                category: 'hadith'
+            },   {
+                id: 12,
+                title: "Moralidad mula sa Pananaw ng Relihiyong-Islam (1) ",
+                description: "Pagsasalita sa Filipino tungkol sa paghuhugas at pagdarasal",
+                link:"https://www.youtube.com/embed/EQm-o3Bjde0"   ,
+                category: 'akhlaq'
             }, 
     
         ],
@@ -952,6 +1082,45 @@ function Videos(){
                 description: "کلیپی از حدیثی از صحیح بخاری",
                 link:"https://www.youtube.com/embed/GakMWfCLLjo"    ,
                 category: 'hadith'
+            }, 
+
+            {
+                id: 9,
+                title: "جزء اول ترجمه تفسیری قرآنکریم به زبان فارسی سی جزء کامل",
+                description: "شرح دین اسلام و صحبت در مورد آن",
+                link:"https://www.youtube.com/embed/AHawE8RLInQ"     ,
+                category: 'tafseer'
+            },{
+                id: 10,
+                title: "بررسی سیره نبوی؛ سخنان پیامبر اسلام قبل از وفاتش چه بود",
+                description: "صحبت از بصیرت در تبلیغ اسلامی",
+                link:"https://www.youtube.com/embed/N0EMLGlWxoE"     ,
+                category: 'tafseer'
+            },   {
+                id: 11,
+                title: "بررسی سیره نبوی؛ سخنان پیامبر اسلام قبل از وفاتش چه بود",
+                description: "کلیپی در مورد دین اسلام",
+                link:"https://www.youtube.com/embed/N0EMLGlWxoE"   ,
+                category: 'seerah'
+            },   {
+                id: 12,
+                title: "سيرة النبي صلى الله عليه وسلم",
+                description: "صحبت در مورد چگونگی نماز خواندن",
+                link:"https://www.youtube.com/embed/0_MOPfSuAbs"    ,
+                category: 'seerah'
+            },   {
+                id: 13,
+                title: `اخلاق اسلامی`,
+                description: "کلیپی از حدیثی از صحیح بخاری",
+                link:"https://www.youtube.com/embed/noX8f1z97Lo"   ,
+                category: 'akhlaq'
+            }, 
+            {
+                id: 14,
+                title: `اخلاق اسلامی از ما چه میخواهد`,
+                description: "کلیپی از حدیثی از صحیح بخاری",
+                link:"https://www.youtube.com/embed/Vr_9gNHTkTw"   ,
+                category: 'akhlaq'
             }, 
               
     
