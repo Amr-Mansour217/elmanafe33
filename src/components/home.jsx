@@ -46,19 +46,19 @@ const Home = () => {
     
       const handleSubmit = async (e) => {
         e.preventDefault();
-        if (stars === 0 || comment.trim() === '') {  // Changed from rating and feedback
+        if (stars === 0 || comment.trim() === '') {
           setIsErrorModalOpen(true);
         } else {
           try {
-            const response = await axios.post('http://srv759235.hstgr.cloud/feedback', {
-              stars: stars,  // Changed from rating to stars
-              comment: comment  // Changed from feedback to comment
+            const response = await axios.post('/feedback', {
+              stars: stars,
+              comment: comment
             });
             
             if (response.status === 200) {
               setIsModalOpen(true);
-              setStars(0);  // Changed from setRating to setStars
-              setComment('');  // Changed from setFeedback to setComment
+              setStars(0);
+              setComment('');
             } else {
               throw new Error('Unexpected response from server');
             }
