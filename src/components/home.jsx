@@ -48,31 +48,42 @@ const Home = () => {
         e.preventDefault();
         if (stars === 0 || comment.trim() === '') {
           setIsErrorModalOpen(true);
+          setErrorMessage(t('Please provide both a rating and a comment.'));
         } else {
           try {
+            console.log('Sending feedback:', { stars, comment });
             const response = await axios.post('/feedback', {
               stars: stars,
               comment: comment
+            }, {
+              headers: {
+                'Content-Type': 'application/json'
+              }
             });
             
+            console.log('Server response:', response);
+      
             if (response.status === 200) {
               setIsModalOpen(true);
               setStars(0);
               setComment('');
             } else {
-              throw new Error('Unexpected response from server');
+              throw new Error(`Unexpected response from server: ${response.status}`);
             }
           } catch (error) {
             console.error('Error submitting feedback:', error);
             let errorMessage = 'An error occurred while submitting feedback.';
             if (error.response) {
+              console.error('Error response:', error.response);
               errorMessage = `Server error: ${error.response.status}`;
               if (error.response.data && error.response.data.message) {
                 errorMessage += ` - ${error.response.data.message}`;
               }
             } else if (error.request) {
+              console.error('Error request:', error.request);
               errorMessage = 'No response received from server. Please check your internet connection.';
             } else {
+              console.error('Error message:', error.message);
               errorMessage = error.message;
             }
             setIsErrorModalOpen(true);
@@ -80,7 +91,6 @@ const Home = () => {
           }
         }
       };
-    
       // ... (rest of the component remains the same)
     
     
